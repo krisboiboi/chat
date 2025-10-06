@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom with Minigames</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Chatroom</h2>
+    <div id="messages"></div>
+    <input type="text" id="chatInput" placeholder="Type a message..." />
+    <button id="sendMessage">Send</button>
+  </div>
+
+  <div class="game-container">
+    <h2>Tic-Tac-Toe</h2>
+    <button id="startGame">Start Game</button>
+    <div id="gameBoard" class="hidden"></div>
+    <div id="gameStatus"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
