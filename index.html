@@ -3,23 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatroom with Minigames</title>
+  <title>Modern Chatroom & Minigames</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="chat-container">
-    <h2>Chatroom</h2>
-    <div id="messages"></div>
-    <input type="text" id="chatInput" placeholder="Type a message..." />
-    <button id="sendMessage">Send</button>
+  <header>
+    <h1>Chatroom & Minigames</h1>
+  </header>
+
+  <!-- Username Setup (shown only if no username is saved) -->
+  <div id="usernameContainer" class="username-container">
+    <label for="usernameInput">Enter a username:</label>
+    <input type="text" id="usernameInput" placeholder="Your Username" />
+    <button id="setUsernameButton">Set Username</button>
   </div>
 
-  <div class="game-container">
-    <h2>Tic-Tac-Toe</h2>
-    <button id="startGame">Start Game</button>
-    <div id="gameBoard" class="hidden"></div>
-    <div id="gameStatus"></div>
+  <div class="main-container">
+    <!-- Chatroom Section -->
+    <section class="chat-container">
+      <div id="messages" class="messages"></div>
+      <input type="text" id="chatInput" class="chat-input" placeholder="Type a message..." />
+      <button id="sendMessage" class="send-button">Send</button>
+    </section>
+
+    <!-- Game Section -->
+    <section class="game-container">
+      <h2>Tic-Tac-Toe</h2>
+      <button id="startGame" class="game-button">Start Game</button>
+      <div id="gameBoard" class="game-board hidden"></div>
+      <div id="gameStatus" class="game-status"></div>
+    </section>
   </div>
+
+  <footer>
+    <p>Created by Kismet</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
